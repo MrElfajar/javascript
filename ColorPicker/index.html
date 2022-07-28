@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <script src=".js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <h2>Color Picker</h2>
+    <div class="container">
+      <div class="cursor"></div>
+      <div class="wheel-control"></div>
+      <div class="canvas1-container">
+        <canvas id="canvas1"></canvas>
+      </div>
+      <canvas id="canvas2"></canvas>
+
+      <div class="color-data">
+        <div class="hsl">
+          <input
+            class="val"
+            onfocus="this.select()"
+            type="text"
+            name="hsl"
+            id="hsl"
+            value="hsl(0, 0%, 0%)"
+          />
+          <div class="copy">copy</div>
+        </div>
+        <div class="rgb">
+          <input
+            class="val"
+            onfocus="this.select()"
+            type="text"
+            name="rgb"
+            id="rgb"
+            value="rgba(0, 0, 0, 1)"
+          />
+          <div class="copy">copy</div>
+        </div>
+        <div class="hex">
+          <input
+            class="val"
+            onfocus="this.select()"
+            type="text"
+            name="hex"
+            id="hex"
+            value="#FFFFFF"
+          />
+          <div class="copy">copy</div>
+        </div>
+        <div class="cmyk">
+          <input
+            class="val"
+            onfocus="this.select()"
+            type="text"
+            name="cmyk"
+            id="cmyk"
+            value="CMYK(0, 0, 0, 1)"
+          />
+          <div class="copy">copy</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

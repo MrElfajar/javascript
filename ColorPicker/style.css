@@ -1,0 +1,104 @@
+@font-face{
+	font-family: "jetbrains";
+	src: url("./JetBrainsMono-Bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "jetbrains" ,Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  border: 5px solid white;
+  background: rgba(0,0,0,.2);
+  }
+.cursor .pick {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 50%;
+  transform-origin: center;
+  transform: translateX(-50%);
+  background: red;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+.canvas1-container {
+  padding: 0 40px;
+}
+
+#canvas1,
+#canvas2 {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.wheel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  transform-origin: center;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid black;
+}
+
+.color-data {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.color-data > div {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.val {
+  width: 100%;
+  padding: 5px 5px;
+  background: rgba(233,233,233,.4);
+  border-radius: 4px;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-align: center;
+  color: rgb(142,142,142);
+}
+
+.copy {
+  height: min-content;
+  user-select: none;
+  padding: 5px 5px;
+  border-radius: 2px;
+  font-size: .8rem;
+  background: rgba(193,192,192,0.4);
+}
+.copy:hover {
+  background: rgba(193,192,192,0.9);
+}
